@@ -5,4 +5,4 @@ File1-"Resource allocation algorithm"-codes about the Q-learning based resource 
 
 File2-"Accident detection task"-codes about accident detection model based on Densenet161
 
-File2 refer to https://github.com/manojpawarsj12/accident-detection
+File2 refers to https://github.com/manojpawarsj12/accident-detection
