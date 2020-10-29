@@ -1,1 +1,2 @@
-
+refer to https://github.com/manojpawarsj12/accident-detection
+the model weights are not given in our project
