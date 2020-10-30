@@ -1,24 +1,24 @@
-%% ²ÎÊı³õÊ¼»¯
+%% å‚æ•°åˆå§‹åŒ–
 clear all;
 clc;
 tic
 M=3;
-B_total=1000; %kHz
-P_total=10; %dBm
+B_total=400; %kHz
+P_total=20; %dBm
 
-N=100; %ÃÉÌØ¿¨Âå·ÂÕæ²ÎÊı
+N=100; %è’™ç‰¹å¡æ´›ä»¿çœŸå‚æ•°
 Reward=zeros(1,N);
 P_allo=zeros(M,N);
 F_allo=zeros(M,N);
 for n=1:1:N
-%% QÖµ±í²ÎÊıÉèÖÃ
+%% Qå€¼è¡¨å‚æ•°è®¾ç½®
 Counter=n
 status_num=1;
 action_num=10000;
 iter_num=500;
 [Q,U_map,U_maxv,action_all]=Q_learning(M,status_num,action_num,iter_num,B_total,P_total);
 
-%% ÌáÈ¡×î´ó½±Àøº¯Êı¶ÔÓ¦µÄ¶¯×÷
+%% æå–æœ€å¤§å¥–åŠ±å‡½æ•°å¯¹åº”çš„åŠ¨ä½œ
 U_max=max(U_map);
 [~,index]=find(U_map==U_max);
 [~,col]=size(index);
